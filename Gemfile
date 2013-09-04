@@ -21,7 +21,11 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Backbone.js on Rails
 gem 'backbone-on-rails'
-gem 'jasminerice'
+gem 'underscore-rails'
+
+group :development, :test do
+  gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
+end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
